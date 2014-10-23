@@ -1,0 +1,29 @@
+﻿<div id="mallorca">
+	<div class="header-menu-container">
+		<div id="header-menu" ng-mouseover="hover=true" ng-mouseleave="hover=false">
+			<i class="fa fa-caret-right" ng-hide="hover"></i>
+			<div ng-show="hover">
+				<i class="fa fa-caret-down" ng-class="{'icon-hover':hover}"></i>
+			</div>
+
+			<ul ng-show="hover">
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="header-title">
+		<a href="/">APTLYFE</a>
+	</div>
+
+	<div class="header-menu-container">
+		<div id="user-menu">
+			Welcome, {{username}}
+			<!--
+			<i class="icon-cogs" ng-class="{'icon-hover':settHover, 'icon-down': settDown}" ng-mouseover="settHover=true" ng-mouseleave="settDown=false" ng-mousedown="settDown=true" ng-mouseup="settDown=false"></i>
+			-->
+		</div>
+	</div>
+</div>

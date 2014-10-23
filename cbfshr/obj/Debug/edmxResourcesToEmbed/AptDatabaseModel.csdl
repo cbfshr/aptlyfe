@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AptDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MainData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ObjectTable" Relationship="Self.FK_MainData_ObjectTable" FromRole="MainData" ToRole="ObjectTable" />
+  </EntityType>
+  <EntityType Name="ObjectTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MainDatas" Relationship="Self.FK_MainData_ObjectTable" FromRole="ObjectTable" ToRole="MainData" />
+  </EntityType>
+  <Association Name="FK_MainData_ObjectTable">
+    <End Role="ObjectTable" Type="Self.ObjectTable" Multiplicity="1" />
+    <End Role="MainData" Type="Self.MainData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ObjectTable">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MainData">
+        <PropertyRef Name="ObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AptDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MainDatas" EntityType="Self.MainData" />
+    <EntitySet Name="ObjectTables" EntityType="Self.ObjectTable" />
+    <AssociationSet Name="FK_MainData_ObjectTable" Association="Self.FK_MainData_ObjectTable">
+      <End Role="ObjectTable" EntitySet="ObjectTables" />
+      <End Role="MainData" EntitySet="MainDatas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

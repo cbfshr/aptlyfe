@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ApartmentArchiveModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CategoryList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ItemLists" Relationship="Self.FK_ItemList_CategoryList" FromRole="CategoryList" ToRole="ItemList" />
+  </EntityType>
+  <EntityType Name="ItemList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="RoomId" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" />
+    <Property Name="Link" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CategoryList" Relationship="Self.FK_ItemList_CategoryList" FromRole="ItemList" ToRole="CategoryList" />
+    <NavigationProperty Name="RoomList" Relationship="Self.FK_ItemList_RoomList" FromRole="ItemList" ToRole="RoomList" />
+    <NavigationProperty Name="StatusList" Relationship="Self.FK_ItemList_StatusList" FromRole="ItemList" ToRole="StatusList" />
+    <NavigationProperty Name="UserDetail" Relationship="Self.FK_ItemList_UserDetail" FromRole="ItemList" ToRole="UserDetail" />
+  </EntityType>
+  <EntityType Name="RoomList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoomName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ItemLists" Relationship="Self.FK_ItemList_RoomList" FromRole="RoomList" ToRole="ItemList" />
+    <NavigationProperty Name="UserDetails" Relationship="Self.FK_UserDetail_RoomList" FromRole="RoomList" ToRole="UserDetail" />
+  </EntityType>
+  <EntityType Name="StatusList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatusName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ItemLists" Relationship="Self.FK_ItemList_StatusList" FromRole="StatusList" ToRole="ItemList" />
+  </EntityType>
+  <EntityType Name="UserDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RoomId" Type="Int32" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ItemLists" Relationship="Self.FK_ItemList_UserDetail" FromRole="UserDetail" ToRole="ItemList" />
+    <NavigationProperty Name="RoomList" Relationship="Self.FK_UserDetail_RoomList" FromRole="UserDetail" ToRole="RoomList" />
+  </EntityType>
+  <Association Name="FK_ItemList_CategoryList">
+    <End Role="CategoryList" Type="Self.CategoryList" Multiplicity="1" />
+    <End Role="ItemList" Type="Self.ItemList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryList">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ItemList">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemList_RoomList">
+    <End Role="RoomList" Type="Self.RoomList" Multiplicity="1" />
+    <End Role="ItemList" Type="Self.ItemList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomList">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ItemList">
+        <PropertyRef Name="RoomId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemList_StatusList">
+    <End Role="StatusList" Type="Self.StatusList" Multiplicity="1" />
+    <End Role="ItemList" Type="Self.ItemList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusList">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ItemList">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemList_UserDetail">
+    <End Role="UserDetail" Type="Self.UserDetail" Multiplicity="1" />
+    <End Role="ItemList" Type="Self.ItemList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ItemList">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDetail_RoomList">
+    <End Role="RoomList" Type="Self.RoomList" Multiplicity="0..1" />
+    <End Role="UserDetail" Type="Self.UserDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomList">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserDetail">
+        <PropertyRef Name="RoomId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ApartmentArchiveEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CategoryLists" EntityType="Self.CategoryList" />
+    <EntitySet Name="ItemLists" EntityType="Self.ItemList" />
+    <EntitySet Name="RoomLists" EntityType="Self.RoomList" />
+    <EntitySet Name="StatusLists" EntityType="Self.StatusList" />
+    <EntitySet Name="UserDetails" EntityType="Self.UserDetail" />
+    <AssociationSet Name="FK_ItemList_CategoryList" Association="Self.FK_ItemList_CategoryList">
+      <End Role="CategoryList" EntitySet="CategoryLists" />
+      <End Role="ItemList" EntitySet="ItemLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemList_RoomList" Association="Self.FK_ItemList_RoomList">
+      <End Role="RoomList" EntitySet="RoomLists" />
+      <End Role="ItemList" EntitySet="ItemLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemList_StatusList" Association="Self.FK_ItemList_StatusList">
+      <End Role="StatusList" EntitySet="StatusLists" />
+      <End Role="ItemList" EntitySet="ItemLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemList_UserDetail" Association="Self.FK_ItemList_UserDetail">
+      <End Role="UserDetail" EntitySet="UserDetails" />
+      <End Role="ItemList" EntitySet="ItemLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDetail_RoomList" Association="Self.FK_UserDetail_RoomList">
+      <End Role="RoomList" EntitySet="RoomLists" />
+      <End Role="UserDetail" EntitySet="UserDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

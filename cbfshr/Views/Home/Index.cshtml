@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Test Page 1</title>
+
+	<!--JavaScript-->
+	<script src="~/Scripts/Angular_1.2.19/angular.js"></script>
+	<script src="~/Scripts/Angular_1.2.19/angular-animate.js"></script>
+	<script src="~/Scripts/Angular_1.2.19/angular-route.js"></script>
+	<link href="~/Content/angular-loading-bar-0.3.0/src/loading-bar.css" rel="stylesheet" />
+	<script src="~/Content/angular-loading-bar-0.3.0/src/loading-bar.js"></script>
+
+	<script src="~/Angular/app.js"></script>
+
+	<script src="~/Angular/Directives/header.js"></script>
+	<script src="~/Angular/Controllers/Home/HomeCtrl.js"></script>
+	<script src="~/Angular/Controllers/Login/Login.js"></script>
+	<script src="~/Angular/Directives/Header/HeaderController.js"></script>
+	<script src="~/Angular/filters.js"></script>
+
+	<!--StyleSheets-->
+	<link href="~/Content/Site.css" rel="stylesheet" />
+	<link href="~/Angular/Directives/Header/Header.css" rel="stylesheet" />
+	<link href="~/Content/Fonts/font-awesome.css" rel="stylesheet" />
+	<link href="~/Content/Fonts/Font-Awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="~/Angular/Controllers/Login/Login.css" rel="stylesheet" />
+
+
+	
+</head>
+<body ng-app="app">
+	<div id="page-container">
+		<div page-header></div>
+		<div id="view" ng-view></div>
+	</div>
+</body>
+</html>

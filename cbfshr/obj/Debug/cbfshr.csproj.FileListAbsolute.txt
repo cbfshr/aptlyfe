@@ -1,0 +1,213 @@
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\cbfshr.dll.config
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\cbfshr.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\cbfshr.pdb
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\Antlr3.Runtime.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\EntityFramework.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\Microsoft.Data.Edm.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\Microsoft.Data.OData.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\Microsoft.Web.Infrastructure.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\Newtonsoft.Json.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Net.Http.Formatting.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Spatial.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Helpers.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Http.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Http.OData.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Http.Tracing.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Http.WebHost.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Mvc.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Optimization.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Providers.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Razor.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.WebPages.Deployment.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.WebPages.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.WebPages.Razor.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\WebGrease.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\EntityFramework.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\Newtonsoft.Json.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Net.Http.Formatting.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Helpers.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Http.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Http.WebHost.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Mvc.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Razor.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.WebPages.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.WebPages.Deployment.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.WebPages.Razor.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Http.Tracing.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Web.Http.OData.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\Microsoft.Data.Edm.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\Microsoft.Data.OData.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\System.Spatial.xml
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\de\Microsoft.Data.Edm.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\es\Microsoft.Data.Edm.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\fr\Microsoft.Data.Edm.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\it\Microsoft.Data.Edm.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\ja\Microsoft.Data.Edm.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\ko\Microsoft.Data.Edm.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\ru\Microsoft.Data.Edm.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\de\Microsoft.Data.OData.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\es\Microsoft.Data.OData.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\fr\Microsoft.Data.OData.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\it\Microsoft.Data.OData.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\ja\Microsoft.Data.OData.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\ko\Microsoft.Data.OData.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\ru\Microsoft.Data.OData.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\de\System.Spatial.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\es\System.Spatial.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\fr\System.Spatial.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\it\System.Spatial.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\ja\System.Spatial.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\ko\System.Spatial.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\ru\System.Spatial.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\zh-Hans\System.Spatial.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\bin\zh-Hant\System.Spatial.resources.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\obj\Debug\cbfshr.csprojResolveAssemblyReference.cache
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\obj\Debug\cbfshr.dll
+c:\users\fisherca\documents\visual studio 2013\Projects\cbfshr\cbfshr\obj\Debug\cbfshr.pdb
+C:\projects\cbfshr\cbfshr\bin\cbfshr.dll.config
+C:\projects\cbfshr\cbfshr\bin\cbfshr.dll
+C:\projects\cbfshr\cbfshr\bin\cbfshr.pdb
+C:\projects\cbfshr\cbfshr\bin\Antlr3.Runtime.dll
+C:\projects\cbfshr\cbfshr\bin\EntityFramework.dll
+C:\projects\cbfshr\cbfshr\bin\Microsoft.Data.Edm.dll
+C:\projects\cbfshr\cbfshr\bin\Microsoft.Data.OData.dll
+C:\projects\cbfshr\cbfshr\bin\Microsoft.Web.Infrastructure.dll
+C:\projects\cbfshr\cbfshr\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\projects\cbfshr\cbfshr\bin\Newtonsoft.Json.dll
+C:\projects\cbfshr\cbfshr\bin\System.Net.Http.Formatting.dll
+C:\projects\cbfshr\cbfshr\bin\System.Spatial.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.Helpers.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.Http.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.Http.OData.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.Http.Tracing.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.Http.WebHost.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.Mvc.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.Optimization.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.Providers.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.Razor.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.WebPages.Deployment.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.WebPages.dll
+C:\projects\cbfshr\cbfshr\bin\System.Web.WebPages.Razor.dll
+C:\projects\cbfshr\cbfshr\bin\WebGrease.dll
+C:\projects\cbfshr\cbfshr\bin\EntityFramework.xml
+C:\projects\cbfshr\cbfshr\bin\Newtonsoft.Json.xml
+C:\projects\cbfshr\cbfshr\bin\System.Net.Http.Formatting.xml
+C:\projects\cbfshr\cbfshr\bin\System.Web.Helpers.xml
+C:\projects\cbfshr\cbfshr\bin\System.Web.Http.xml
+C:\projects\cbfshr\cbfshr\bin\System.Web.Http.WebHost.xml
+C:\projects\cbfshr\cbfshr\bin\System.Web.Mvc.xml
+C:\projects\cbfshr\cbfshr\bin\System.Web.Razor.xml
+C:\projects\cbfshr\cbfshr\bin\System.Web.WebPages.xml
+C:\projects\cbfshr\cbfshr\bin\System.Web.WebPages.Deployment.xml
+C:\projects\cbfshr\cbfshr\bin\System.Web.WebPages.Razor.xml
+C:\projects\cbfshr\cbfshr\bin\System.Web.Http.Tracing.xml
+C:\projects\cbfshr\cbfshr\bin\System.Web.Http.OData.xml
+C:\projects\cbfshr\cbfshr\bin\Microsoft.Data.Edm.xml
+C:\projects\cbfshr\cbfshr\bin\Microsoft.Data.OData.xml
+C:\projects\cbfshr\cbfshr\bin\System.Spatial.xml
+C:\projects\cbfshr\cbfshr\bin\de\Microsoft.Data.Edm.resources.dll
+C:\projects\cbfshr\cbfshr\bin\es\Microsoft.Data.Edm.resources.dll
+C:\projects\cbfshr\cbfshr\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\projects\cbfshr\cbfshr\bin\it\Microsoft.Data.Edm.resources.dll
+C:\projects\cbfshr\cbfshr\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\projects\cbfshr\cbfshr\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\projects\cbfshr\cbfshr\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\projects\cbfshr\cbfshr\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\projects\cbfshr\cbfshr\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\projects\cbfshr\cbfshr\bin\de\Microsoft.Data.OData.resources.dll
+C:\projects\cbfshr\cbfshr\bin\es\Microsoft.Data.OData.resources.dll
+C:\projects\cbfshr\cbfshr\bin\fr\Microsoft.Data.OData.resources.dll
+C:\projects\cbfshr\cbfshr\bin\it\Microsoft.Data.OData.resources.dll
+C:\projects\cbfshr\cbfshr\bin\ja\Microsoft.Data.OData.resources.dll
+C:\projects\cbfshr\cbfshr\bin\ko\Microsoft.Data.OData.resources.dll
+C:\projects\cbfshr\cbfshr\bin\ru\Microsoft.Data.OData.resources.dll
+C:\projects\cbfshr\cbfshr\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\projects\cbfshr\cbfshr\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\projects\cbfshr\cbfshr\bin\de\System.Spatial.resources.dll
+C:\projects\cbfshr\cbfshr\bin\es\System.Spatial.resources.dll
+C:\projects\cbfshr\cbfshr\bin\fr\System.Spatial.resources.dll
+C:\projects\cbfshr\cbfshr\bin\it\System.Spatial.resources.dll
+C:\projects\cbfshr\cbfshr\bin\ja\System.Spatial.resources.dll
+C:\projects\cbfshr\cbfshr\bin\ko\System.Spatial.resources.dll
+C:\projects\cbfshr\cbfshr\bin\ru\System.Spatial.resources.dll
+C:\projects\cbfshr\cbfshr\bin\zh-Hans\System.Spatial.resources.dll
+C:\projects\cbfshr\cbfshr\bin\zh-Hant\System.Spatial.resources.dll
+C:\projects\cbfshr\cbfshr\obj\Debug\cbfshr.csprojResolveAssemblyReference.cache
+C:\projects\cbfshr\cbfshr\obj\Debug\cbfshr.dll
+C:\projects\cbfshr\cbfshr\obj\Debug\cbfshr.pdb
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\cbfshr.dll.config
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\cbfshr.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\cbfshr.pdb
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\Antlr3.Runtime.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\EntityFramework.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\Microsoft.Data.Edm.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\Microsoft.Data.OData.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\Newtonsoft.Json.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Net.Http.Formatting.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Spatial.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Helpers.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Http.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Http.OData.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Http.Tracing.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Http.WebHost.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Mvc.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Optimization.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Providers.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Razor.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.WebPages.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.WebPages.Razor.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\WebGrease.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\EntityFramework.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\Newtonsoft.Json.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Net.Http.Formatting.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Helpers.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Http.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Http.WebHost.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Mvc.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Razor.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.WebPages.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.WebPages.Razor.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Http.Tracing.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Web.Http.OData.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\Microsoft.Data.Edm.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\Microsoft.Data.OData.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\System.Spatial.xml
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\de\System.Spatial.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\es\System.Spatial.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\fr\System.Spatial.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\it\System.Spatial.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\ja\System.Spatial.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\ko\System.Spatial.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\ru\System.Spatial.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\obj\Debug\cbfshr.csprojResolveAssemblyReference.cache
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\obj\Debug\cbfshr.dll
+C:\Users\Cal\Projects\Web\cbfshr\cbfshr\obj\Debug\cbfshr.pdb

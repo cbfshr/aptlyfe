@@ -1,0 +1,369 @@
+﻿#view {
+	position: absolute;
+
+	width: 100%;
+
+	bottom: 0;
+	top: 36px;
+	left: 0;
+
+	font-family: LabtopSecundoWide;
+	font-size: 16px;
+}
+
+#ibiza {
+	position: relative;
+	left: 12%;
+
+	float: left;
+	width: 76%;
+	height: auto;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 15px;
+
+	border: dashed 0px lightskyblue;
+
+	font-size: 20px;
+
+	background-color: white;
+
+
+	/*This CSS code is to INCLUDE borders and padding in the Width of the Element*/
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#image-container {
+	position: relative;
+
+	height: auto;
+
+	text-align: center;
+
+	background-color: white;
+
+
+	/*This CSS code is to INCLUDE borders and padding in the Width of the Element*/
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#content-container {
+	position: relative;
+
+	height: auto;
+
+	text-align: center;
+
+	background-color: white;
+
+
+	/*This CSS code is to INCLUDE borders and padding in the Width of the Element*/
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.side-column-container {
+	position: fixed;
+
+	float: left;
+	width: 12%;
+	height: 100%;
+	
+	background-color: #E3E3E3;
+}
+#left-column-container {
+	left: 0%;
+}
+#right-column-container {
+	left: 88%;
+
+	text-align: center;
+	font-size: 18pt;
+	color: gray;
+}
+#right-column-content {
+	margin: 20px 10px;
+	color: white;
+}
+#left-column-menu-container {
+	position: absolute;
+	right: 10px;
+	left:40px;
+	top: 20px;
+	width: auto;
+	text-align: right;
+
+	font-size: 18px;
+}
+#right-column-menu-container {
+	position: absolute;
+	right: 10px;
+	left: 10px;
+	top: 40%;
+	width: auto;
+	text-align: left;
+
+	font-size: 18px;
+}
+.menu-item {
+	margin-top: -1px;
+	padding: 3px 10px;
+	text-align: center;
+
+	background-color: #B5DCE8;
+	
+	border: solid 1px black;
+}
+.menu-item:hover {
+	background-color: lightskyblue;
+}
+.menu-container a {
+	color:black;
+	text-decoration: none;
+}
+.highlighted-menu-item {
+	background: skyblue;
+}
+
+/*----------------------------------*/
+
+#optionMenu {
+	/*position:relative;
+	top:500px;*/
+	color:black;
+}
+
+
+.highlighted-link {
+	color: #3399FF !important;
+}
+
+#view-menu {
+	position: relative;
+	color: black;
+	/*-------------*/
+
+	width: 600px;
+
+	margin-left: auto;
+	margin-right: auto;
+	
+
+	height: 40px;
+	
+	text-align:center;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#view-menu .menu-item {
+	width: 120px;
+	float:left;
+
+	margin-left: -1px;
+	padding: 3px 10px;
+
+	color: black;
+
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/*----------------------------------*/
+
+.image-map-positioning {
+	position: absolute;
+
+	width: 100%;
+	height: 486px;
+}
+
+.info-container {
+	margin-bottom: 40px;
+}
+
+
+.error-list {
+	width: 60%;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 5px;
+
+	padding: 3px 10px;
+
+	text-align: center;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+.error-list-message {
+	border: solid 1px #FF4D4D;
+	border-radius: 5px;
+	background-color: 	#FF8585;
+}
+
+.error-list-delete {
+	width: 24px;
+
+	border: none !important;
+	padding: 3px 1px;
+
+	text-align: left;
+	font-size: 14px;
+
+	cursor: pointer;
+}
+
+/*----------index.html (home) should probably rename html file---------*/
+/*should get a Grunt Build running to make CSS and JS handling much easier for the developer*/
+/*CSS attributes are paired together based on the object and how it appears on the site*/
+.informationTable {
+	width: 90%;
+	color: white;
+
+	font-family: Arial;
+	font-size: 16px;
+
+	border-collapse: collapse;
+}
+#livingRoomTable, th, td {
+	border: solid 2px lightskyblue;
+}
+
+.td-status-icon-column {
+	width: 25px;
+}
+
+.td-status-column {
+	width: 120px;
+}
+
+.td-description-column {
+	width: 190px;
+}
+
+.td-description-column input[type=text] {
+	text-align: center;
+}
+
+.td-category-column {
+	width: 150px;
+}
+
+.td-owner-column {
+	width: 100px;
+}
+
+.td-room-column {
+	width: 130px;
+}
+
+.td-link-column {
+	width: 35px;
+}
+
+.edit-column {
+	width: 1px;
+	padding-left: 3px;
+}
+
+.delete-column {
+	width: 1px;
+	padding-left: 3px;
+}
+
+.order-by-rows {
+	background-color: #F3F3F3;
+}
+
+.apartment-item-rows-odd td {
+	background-color: #DBF0F9;
+}
+.apartment-item-rows-even td {
+	background-color: white;
+}
+
+#edited-item-rows td {
+	background-color: lightgreen;
+}
+
+#added-item-rows td {
+	background-color: lightblue;
+}
+
+th {
+	background-color: lightskyblue;
+	padding-top: 2px;
+
+	cursor:pointer;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+th, td {
+	color: black;
+	padding: 3px;
+
+	font-size: 14px;
+}
+
+.error-field {
+	background-color: #FF4D4D !important;
+}
+
+.error-field-input {
+	background-color: #FF6666 !important;
+}
+
+/*------------GLOBAL CSS------------*/
+body {
+	margin: 0px !important;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+
+	font-family: LabtopSecundoWide;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #66CCFF;
+}
+
+.to-top-link {
+	width: 100%;
+	text-align: right;
+}
+
+.to-top-link a {
+	padding: 0;
+	margin: 0;
+	padding-right:5px;
+	text-decoration: none;
+	color: lightskyblue
+}
+
+.change-cursor {
+	cursor: pointer;
+}

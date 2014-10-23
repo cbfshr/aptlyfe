@@ -1,0 +1,331 @@
+﻿<div id="left-column-container" class="side-column-container">
+	<div id="left-column-menu-container" class="menu-container">
+		<a><div class="menu-item">
+			HOME
+		</div></a>
+		<a><div class="menu-item">
+			ABOUT
+		</div></a>
+		<a><div class="menu-item">
+			BLAH
+		</div></a>
+		<a><div class="menu-item">
+			STUFF
+		</div></a>
+	</div>
+</div>
+
+
+<div id="ibiza">
+	<div id="image-container" style="height: 500px;">
+		<div class="image-map-positioning" style="margin-left: 30px;width: 200px;height:auto;padding:5px;background:skyblue;" ng-show="hint">
+			HINT: Try Hiding the room views by clicking the checkbox by "Hide All", then hover over the image!
+		</div>
+		<div class="image-map-positioning">
+			<img id="livingRoom" src="../../../Images/APT_ISO_VIEW_zLivingRoom.png" border="0" width="711" height="486" usemap="#image-map" alt=""  ng-show="viewRoom.1 || viewRoomCheckbox.1" style="opacity:.40;"/>
+		</div>
+		<div class="image-map-positioning">
+			<img id="kitchen" src="../../../Images/APT_ISO_VIEW_zKitchen.png" border="0" width="711" height="486" usemap="#image-map" alt=""  ng-show="viewRoom.2 || viewRoomCheckbox.2" style="opacity:.60;"/>
+		</div>
+		<div class="image-map-positioning">
+			<img id="bathroom" src="../../../Images/APT_ISO_VIEW_zBathroom.png" border="0" width="711" height="486" usemap="#image-map" alt=""  ng-show="viewRoom.3 || viewRoomCheckbox.3" style="opacity:.60;"/>
+		</div>
+		<div class="image-map-positioning">
+			<img id="cal" src="../../../Images/APT_ISO_VIEW_zCal.png" border="0" width="711" height="486" usemap="#image-map" alt=""  ng-show="viewRoom.4 || viewRoomCheckbox.4" style="opacity:.60;"/>
+		</div>
+		<div class="image-map-positioning">
+			<img id="max" src="../../../Images/APT_ISO_VIEW_zMax.png" border="0" width="711" height="486" usemap="#image-map" alt=""  ng-show="viewRoom.5 || viewRoomCheckbox.5" style="opacity:.60;"/>
+		</div>
+		<div class="image-map-positioning">
+			<img id="alex" src="../../../Images/APT_ISO_VIEW_zAlex.png" border="0" width="711" height="486" usemap="#image-map" alt=""  ng-show="viewRoom.6 || viewRoomCheckbox.6" style="opacity:.60;"/>
+		</div>
+
+		<div class="image-map-positioning">
+			<img id="detailedViewISO" src="../../../Images/APT_ISO_VIEW_aDetail2.png" border="0" width="711" height="486" usemap="#image-map" alt=""  ng-show="detailView" />
+			<img id="standardViewISO" src="../../../Images/APT_ISO_VIEW_aStandard1.png" border="0" width="711" height="486" usemap="#image-map" alt=""  ng-show="!detailView" />
+
+			<map name="image-map" id="apartment-image-map">
+				<area id="livingRoomArea" alt="livingroom" title="livingroom" shape="poly" coords="2,485,72,425,113,425,176,373,270,373,303,346,356,346,598,346,434,485" style="outline:none;display:block;cursor:pointer;" target="_self" ng-click="scrollTo('livingRoomLink')" ng-mouseover="toggleSpecificView(1)" ng-mouseleave="toggleSpecificView(1)" />
+				<area id="kitchenArea" alt="kitchen" title="kitchen" shape="poly" coords="357,346,467,253,467,221,522,221,522,320,522,345" style="outline:none;display:block;cursor:pointer;" target="_self" ng-click="scrollTo('kitchenLink')" ng-mouseover="toggleSpecificView(2)" ng-mouseleave="toggleSpecificView(2)" />
+				<area id="bathroomArea" alt="bathroom" title="bathroom" shape="poly" coords="523,221,522,320,631,320,710,252,710,127,656,126,545,221" style="outline:none;display:block;cursor:pointer;" target="_self" ng-click="scrollTo('bathroomLink')" ng-mouseover="toggleSpecificView(3)" ng-mouseleave="toggleSpecificView(3)" />
+				<area id="calArea" alt="cal" title="cal" shape="poly" coords="167,220,169,346,357,346,467,253,467,221,409,221,381,193,303,221" style="outline:none;display:block;cursor:pointer;" target="_self" ng-click="scrollTo('calRoomLink')" ng-mouseover="toggleSpecificView(4)" ng-mouseleave="toggleSpecificView(4)" />
+				<area id="maxArea" alt="max" title="max" shape="poly" coords="168,94,168,220,303,220,381,193,381,67,458,1,278,0" style="outline:none;display:block;cursor:pointer;" target="_self" ng-click="scrollTo('maxRoomLink')" ng-mouseover="toggleSpecificView(5)" ng-mouseleave="toggleSpecificView(5)" />
+				<area id="alexArea" alt="alex" title="alex" shape="poly" coords="460,1,381,66,381,193,409,221,546,221,656,127,656,1" style="outline:none;display:block;cursor:pointer;" target="_self" ng-click="scrollTo('alexRoomLink')" ng-mouseover="toggleSpecificView(6)" ng-mouseleave="toggleSpecificView(6)" />
+			</map>
+		</div>
+	</div>
+
+	<div id="content-container">
+		<!--<h1><a name="top" style="padding-top:65px;color:black;text-decoration:none;" href="##top">APT LAYOUT</a></h1>-->
+		<div id="optionMenu">
+			<input type="checkbox" ng-model="detailView" />Detailed View
+
+			<br />
+			<input type="checkbox" ng-model="viewRoomCheckbox.1" ng-change="changeAllCheckbox(1)" />
+			<span ng-mouseover="toggleSpecificView(1)" ng-mouseleave="toggleSpecificView(1)" ng-class="{'highlighted-link': viewRoom.1}" style="cursor: wait;"> Living Room</span> | 
+			
+			<input type="checkbox" ng-model="viewRoomCheckbox.2" ng-change="changeAllCheckbox(2)" />
+			<span ng-mouseover="toggleSpecificView(2)" ng-mouseleave="toggleSpecificView(2)" ng-class="{'highlighted-link': viewRoom.2}">Kitchen</span> | 
+			
+			<input type="checkbox" ng-model="viewRoomCheckbox.3" ng-change="changeAllCheckbox(3)" />
+			<span ng-mouseover="toggleSpecificView(3)" ng-mouseleave="toggleSpecificView(3)" ng-class="{'highlighted-link': viewRoom.3}">Bathroom</span> | 
+			
+			<input type="checkbox" ng-model="viewRoomCheckbox.4" ng-change="changeAllCheckbox(4)" />
+			<span ng-mouseover="toggleSpecificView(4)" ng-mouseleave="toggleSpecificView(4)" ng-class="{'highlighted-link': viewRoom.4}">Cal's Room</span> | 
+			
+			<input type="checkbox" ng-model="viewRoomCheckbox.5" ng-change="changeAllCheckbox(5)" />
+			<span ng-mouseover="toggleSpecificView(5)" ng-mouseleave="toggleSpecificView(5)" ng-class="{'highlighted-link': viewRoom.5}">Max's Room</span> | 
+			
+			<input type="checkbox" ng-model="viewRoomCheckbox.6" ng-change="changeAllCheckbox(6)" />
+			<span ng-mouseover="toggleSpecificView(6)" ng-mouseleave="toggleSpecificView(6)" ng-class="{'highlighted-link': viewRoom.6}">Alex's Room</span> | 
+			
+			<input type="checkbox" ng-model="allRoomsViewed" ng-change="toggleViewAllRooms()" />
+			<a ng-click="changeInfoView('All Items')" ng-class="{'highlighted-link': allRoomsViewed}">All</a>
+		
+
+			<br />
+
+			<!--<div id="option-menu2" align="center">
+				<a><div class="menu-item">
+					Living Room
+				</div></a>
+				<a><div class="menu-item">
+					Kitchen
+				</div></a>
+				<a><div class="menu-item">
+					Bathroom
+				</div></a>
+				<a><div class="menu-item">
+					Cal's Room
+				</div></a>
+				<a><div class="menu-item">
+					Max's Room
+				</div></a>
+				<a><div class="menu-item">
+					Alex's Room
+				</div></a>
+				<a><div class="menu-item">
+					Hide All
+				</div></a>
+			</div>-->
+		
+		</div>
+		
+		<hr style="color:black;background-color:black;height:3px;border:none;"/>
+
+		View items by: 
+		<div id="view-menu" align="center">
+			<a ng-click="changeInfoView('All Items')">
+				<div class="menu-item" ng-class="{'highlighted-menu-item': infoView=='All Items'}">All Items</div>
+			</a>
+			<a ng-click="changeInfoView('Room')">
+				<div class="menu-item" ng-class="{'highlighted-menu-item': infoView=='Room'}">Room</div>
+			</a>
+			<a ng-click="changeInfoView('Category')">
+				<div class="menu-item" ng-class="{'highlighted-menu-item': infoView=='Category'}">Category</div>
+			</a>
+			<a ng-click="changeInfoView('Owner')">
+				<div class="menu-item" ng-class="{'highlighted-menu-item': infoView=='Owner'}">Owner</div>
+			</a>
+			<a ng-click="changeInfoView('Status')">
+				<div class="menu-item" ng-class="{'highlighted-menu-item': infoView=='Status'}">Status</div>
+			</a>
+		</div>
+		<div style="font-size:16px;width:100%;text-align:right;"><input type="checkbox" ng-model="includeDeletedItems" />Show Deleted Items</div>
+
+		<table class="error-list">
+			<tr ng-repeat="error in errorList">
+				<td class="error-list-message">
+					{{error.Msg}}
+				</td>
+				<td ng-click="deleteError($index)" class="error-list-delete">
+					<i class="fa fa-times"></i>
+				</td>
+			</tr>
+		</table>
+
+		<div ng-repeat="option in viewOptions" ng-class="{'order-by-rows': $index%2==1}">
+			<div id="{{option.Id}}Link"></div>
+			<hr style="margin-top:0;padding:0;" />
+			<div class="to-top-link"><a ng-click="scrollTo('top', '')"><i class="fa fa-angle-up"></i> To Top</a></div>
+			<div class="info-container">
+				<h1><a ng-click="scrollTo('{{option.Id}}Link')" style="color:black;text-decoration:none;">{{option.Name}}</a></h1>
+
+				<table class="informationTable" align="center">
+					<tr>
+						<th colspan="2" ng-click="changeColumnSorting('StatusId')">Status 
+							<i ng-class="{
+								'fa fa-sort': columnSorting1!='StatusId' || columnSorting1!='-StatusId', 
+								'fa fa-sort-desc': columnSorting1=='StatusId', 
+								'fa fa-sort-asc': columnSorting1=='-StatusId'}"></i>
+						</th>
+
+						<th ng-click="changeColumnSorting('ItemName')">Item 
+							<i ng-class="{
+								'fa fa-sort': columnSorting1!='ItemName' || columnSorting1!='-ItemName', 
+								'fa fa-sort-desc': columnSorting1=='ItemName', 
+								'fa fa-sort-asc': columnSorting1=='-ItemName'}"></i>
+						</th>
+
+						<th ng-click="changeColumnSorting('CategoryId')">Category 
+							<i ng-class="{
+								'fa fa-sort': columnSorting1!='CategoryId' || columnSorting1!='-CategoryId', 
+								'fa fa-sort-desc': columnSorting1=='CategoryId', 
+								'fa fa-sort-asc': columnSorting1=='-CategoryId'}"></i>
+						</th>
+
+						<th ng-click="changeColumnSorting('UserId')">Owner 
+							<i ng-class="{
+								'fa fa-sort': columnSorting1!='UserId' || columnSorting1!='-UserId', 
+								'fa fa-sort-desc': columnSorting1=='UserId', 
+								'fa fa-sort-asc': columnSorting1=='-UserId'}"></i>
+						</th>
+						<th ng-click="changeColumnSorting('RoomId')">Room
+							<i ng-class="{
+								'fa fa-sort': columnSorting1!='RoomId' || columnSorting1!='-RoomId', 
+								'fa fa-sort-desc': columnSorting1=='RoomId', 
+								'fa fa-sort-asc': columnSorting1=='-RoomId'}"></i>
+						</th>
+						<th style="cursor:default;"><i class="fa fa-link fa-flip-horizontal"></i></th>
+						<th style="display:none;border:none;"></th>
+					</tr>
+					<tr >
+						<td colspan="7" ng-hide="dataLoaded">Data has not been successfully loaded.</td>
+					</tr>
+
+					<tr  ng-repeat="row in apartmentItems | viewFilter:option:infoView:includeDeletedItems | orderBy:[columnSorting1,columnSorting2,$index]" ng-class="{'apartment-item-rows-odd': $index%2==1, 'apartment-item-rows-even': $index%2==0}">
+						<td class="td-status-icon-column">
+							<i ng-class="{
+								'fa fa-check': selectedStatusOptions[row.Id - 1].Id==1,
+								'fa fa-exclamation-triangle': selectedStatusOptions[row.Id - 1].Id==2,
+								'fa fa-gift': selectedStatusOptions[row.Id - 1].Id==3,
+								'fa fa-circle-thin': selectedStatusOptions[row.Id - 1].Id==4,
+								'fa fa-minus': selectedStatusOptions[row.Id - 1].Id==5,
+								'fa fa-times': selectedStatusOptions[row.Id - 1].Id==6}"></i>
+						</td>
+						<td class="td-status-column">
+							{{selectedStatusOptions[row.Id - 1].Name}}
+						</td>
+						<td class="td-description-column">
+							{{row.ItemName}}
+						</td>
+						<td class="td-category-column">
+							{{selectedCategoryOptions[row.Id - 1].Name}}
+						</td>
+						<td class="td-owner-column">
+							{{selectedUserOptions[row.Id - 1].Name}}
+						</td>
+						<td class="td-room-column">
+							{{selectedRoomOptions[row.Id - 1].Name}}
+						</td>
+						<td class="td-link-column">
+							<a ng-href="{{row.Link}}" style="text-decoration:none;"><i ng-class="{'fa fa-link fa-flip-horizontal': row.Link}"></i></a>
+						</td>
+						<td class="edit-column" ng-click="editItem(row)" style="text-align:left;cursor:pointer;border:none;background:none !important;">
+							<i class="fa fa-pencil"></i>
+						</td>
+						<td class="delete-column" ng-click="deleteItem(row.Id, 'apartmentItem')" style="text-align:left;cursor:pointer;border:none;background:none !important;">
+							<i class="fa fa-times" ng-hide="row.StatusId==6"></i>
+						</td>
+					</tr>
+					<tr ng-hide="(apartmentItems | viewFilter:option:infoView:includeDeletedItems | orderBy:[columnSorting1,columnSorting2]).length">
+						<td colspan="7">No information for these items is available.</td>
+					</tr>
+
+					<!--Editing items-->
+					<tr ng-repeat="editedRow in editedItems | viewFilter:option:infoView:true" id="edited-item-rows">
+						<td class="td-status-icon-column">
+							<i ng-class="{
+								'fa fa-check': selectedStatusOptions[editedRow.Id - 1].Id==1,
+								'fa fa-exclamation-triangle': selectedStatusOptions[editedRow.Id - 1].Id==2,
+								'fa fa-gift': selectedStatusOptions[editedRow.Id - 1].Id==3,
+								'fa fa-circle-thin': selectedStatusOptions[editedRow.Id - 1].Id==4,
+								'fa fa-minus': selectedStatusOptions[editedRow.Id - 1].Id==5,
+								'fa fa-times': selectedStatusOptions[editedRow.Id - 1].Id==6}"></i>
+						</td>
+						<td class="td-status-column" ng-class="{'error-field': !selectedStatusOptions[editedRow.Id - 1]}">
+							<select ng-model="selectedStatusOptions[editedRow.Id - 1]" ng-options="o.Name for o in statusOptions" ng-class="{'error-field-input': !selectedStatusOptions[editedRow.Id - 1]}" ng-change="editedRow.StatusId=selectedStatusOptions[editedRow.Id - 1].Id"></select>
+						</td>
+						<td class="td-description-column" ng-class="{'error-field': !editedRow.ItemName}">
+							<input type="text" maxlength="50" size="20" ng-model="editedRow.ItemName" onClick="this.setSelectionRange(0, this.value.length)" />
+						</td>
+						<td class="td-category-column" ng-class="{'error-field': !selectedCategoryOptions[editedRow.Id - 1]}">
+							<select ng-model="selectedCategoryOptions[editedRow.Id - 1]" ng-options="o.Name for o in categoryOptions" ng-class="{'error-field-input': !selectedCategoryOptions[editedRow.Id - 1]}" ng-change="editedRow.CategoryId=selectedCategoryOptions[editedRow.Id - 1].Id"></select>
+						</td>
+						<td class="td-owner-column" ng-class="{'error-field': !selectedUserOptions[editedRow.Id - 1]}">
+							<select ng-model="selectedUserOptions[editedRow.Id - 1]" ng-options="o.Name for o in userOptions" ng-class="{'error-field-input': !selectedUserOptions[editedRow.Id - 1]}" ng-change="editedRow.UserId=selectedUserOptions[editedRow.Id - 1].Id"></select>
+						</td>
+						<td class="td-room-column">
+							<select ng-model="selectedRoomOptions[editedRow.Id - 1]" ng-options="o.Name for o in roomOptions" ng-class="{'error-field-input': !selectedRoomOptions[editedRow.Id - 1]}" ng-change="editedRow.RoomId=selectedRoomOptions[editedRow.Id - 1].Id"></select>
+						</td>
+						<td class="td-link-column">
+							<a ng-href="{{editedRow.Link}}" style="text-decoration:none;"><i ng-class="{'fa fa-link fa-flip-horizontal': editedRow.Link}"></i></a>
+						</td>
+						<td class="edit-column" ng-click="editItem(editedRow)" style="text-align:left;cursor:pointer;border:none;background:none !important;">
+							<i class="fa fa-save"></i>
+						</td>
+						<td class="delete-column" ng-click="deleteItem(editedRow.Id, 'editedItem')" style="text-align:left;cursor:pointer;border:none;background:none !important;">
+							<i class="fa fa-times"></i>
+						</td>
+					</tr>
+
+					<!--Adding new items-->
+					<tr ng-repeat="addedRow in addedItems | viewFilter:option:infoView:true" id="added-item-rows">
+						<td class="td-status-icon-column" ng-class="{'error-field': !selectedStatusOptions[addedRow.Id - 1]}">
+							<i ng-class="{
+								'fa fa-check': selectedStatusOptions[addedRow.Id - 1].Id==1,
+								'fa fa-exclamation-triangle': selectedStatusOptions[addedRow.Id - 1].Id==2,
+								'fa fa-gift': selectedStatusOptions[addedRow.Id - 1].Id==3,
+								'fa fa-circle-thin': selectedStatusOptions[addedRow.Id - 1].Id==4,
+								'fa fa-minus': selectedStatusOptions[addedRow.Id - 1].Id==5,
+								'fa fa-times': selectedStatusOptions[addedRow.Id - 1].Id==6}"></i>
+						</td>
+						<td class="td-status-column" ng-class="{'error-field': !selectedStatusOptions[addedRow.Id - 1]}">
+							<select ng-model="selectedStatusOptions[addedRow.Id - 1]" ng-options="o.Name for o in statusOptions" ng-class="{'error-field-input': !selectedStatusOptions[addedRow.Id - 1]}" ng-change="addedRow.StatusId=selectedStatusOptions[addedRow.Id - 1].Id"></select>
+						</td>
+						<td class="td-description-column" ng-class="{'error-field': !addedRow.ItemName}">
+							<input type="text" maxlength="50" size="20" ng-model="addedRow.ItemName" onClick="this.setSelectionRange(0, this.value.length)" autofocus />
+						</td>
+						<td class="td-category-column" ng-class="{'error-field': !selectedCategoryOptions[addedRow.Id - 1]}">
+							<select ng-model="selectedCategoryOptions[addedRow.Id - 1]" ng-options="o.Name for o in categoryOptions" ng-class="{'error-field-input': !selectedCategoryOptions[addedRow.Id - 1]}" ng-change="addedRow.CategoryId=selectedCategoryOptions[addedRow.Id - 1].Id"></select>
+						</td>
+						<td class="td-owner-column" ng-class="{'error-field': !selectedUserOptions[addedRow.Id - 1]}">
+							<select ng-model="selectedUserOptions[addedRow.Id - 1]" ng-options="o.Name for o in userOptions" ng-class="{'error-field-input': !selectedUserOptions[addedRow.Id - 1]}" ng-change="addedRow.UserId=selectedUserOptions[addedRow.Id - 1].Id"></select>
+						</td>
+						<td class="td-room-column" ng-class="{'error-field': !selectedRoomOptions[addedRow.Id - 1]}">
+							<select ng-model="selectedRoomOptions[addedRow.Id - 1]" ng-options="o.Name for o in roomOptions" ng-class="{'error-field-input': !selectedRoomOptions[addedRow.Id - 1]}" ng-change="addedRow.RoomId=selectedRoomOptions[addedRow.Id - 1].Id"></select>
+						</td>
+						<td class="td-link-column" >
+							<a ng-href="{{addedRow.Link}}" style="text-decoration:none;"><i ng-class="{'fa fa-link fa-flip-horizontal': addedRow.Link}"></i></a>
+						</td>
+						<td class="edit-column" ng-click="saveAddedItem(addedRow.Id, true)" style="text-align:left;cursor:pointer;border:none;background:none !important;">
+							<i class="fa fa-upload"></i>
+						</td>
+						<td class="delete-column" ng-click="deleteItem(addedRow.Id, 'addedItem')" style="text-align:left;cursor:pointer;border:none;background:none !important;">
+							<i class="fa fa-times"></i>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="7" style="border:none !important;"></td>
+						<td class="edit-column" ng-click="addNewItem(option.Id)" style="text-align:left;cursor:pointer;border:none;"><i class="fa fa-plus"></i></td>
+					</tr>
+				</table>
+			</div>
+			<div style="height:20px;"></div>
+		</div>
+		<hr style="margin:0;padding:0;" />
+		<div class="to-top-link"><a ng-click="scrollTo('top', '')"><i class="fa fa-angle-up"></i> To Top</a></div>
+	</div>
+</div>
+
+
+<div id="right-column-container" class="side-column-container">
+	<div id="right-column-content">
+		<div id="right-column-menu-container" class="menu-container">
+			<a ng-repeat="option in viewOptions"><div class="menu-item" ng-click="scrollTo($index, '')">
+				{{option.Name}}
+			</div></a>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+﻿<div id="malaga">
+	<div class="login-container"style="">
+		<div id="tmp-id" style="">
+			Who are you again?
+			<br />
+			<br />
+			<form ng-submit="login(userin, passin)">
+				Username: <input ng-model="userin" type="text" max="30" width="20" />
+				<br />
+				Password: <input ng-model="passin" type="password" max="50" width="20" />
+				<br />
+				<button type="submit">Sign In</button>
+
+				<br />
+				<br />
+				<span style="font-family:Arial;font-size:13px;">(Hint: If you are a guest user please use the following credentials:
+					<br />
+					<span style="color:blue;">
+						Username: Guest
+						<br />
+						Password: guest
+					</span>
+					<br />
+					You won't be able to save any items, but everything else is functional)
+				</span>
+			</form>
+		</div>
+	</div>
+</div>
